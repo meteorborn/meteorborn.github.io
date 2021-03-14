@@ -168,12 +168,18 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -202,6 +208,105 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/14/page/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/14/page/" class="post-title-link" itemprop="url">Create a session-based permission set and assign it to a user</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-03-14 16:28:47 / Modified: 18:20:51" itemprop="dateCreated datePublished" datetime="2021-03-14T16:28:47+09:00">2021-03-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Trailhead/" itemprop="url" rel="index"><span itemprop="name">Trailhead</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Trailhead/Salesforce-%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BF%9D%E8%AD%B7/" itemprop="url" rel="index"><span itemprop="name">Salesforce データの保護</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Trailhead/Salesforce-%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BF%9D%E8%AD%B7/%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%A8%A9%E9%99%90%E3%82%BB%E3%83%83%E3%83%88%E3%81%A8%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" itemprop="url" rel="index"><span itemprop="name">セッションベースの権限セットとセキュリティ</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Trailhead/Salesforce-%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BF%9D%E8%AD%B7/%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%A8%A9%E9%99%90%E3%82%BB%E3%83%83%E3%83%88%E3%81%A8%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%A8%A9%E9%99%90%E3%82%BB%E3%83%83%E3%83%88%E3%81%AE%E4%BD%BF%E7%94%A8%E9%96%8B%E5%A7%8B/" itemprop="url" rel="index"><span itemprop="name">セッションベースの権限セットの使用開始</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Clone the Read Only profile and name it <strong>Read Only Clone</strong></p>
+<p>Create a user named <strong>Lynda Herman</strong> and assign the Read Only Clone profile to her    </p>
+<p>问题1:</p>
+<p>Developer Edition里没有找到到ReadOnly的profile，有一个MinimumAccess-Salesforce的Profile，不知道是不是一样的？</p>
+<p>原因:</p>
+<p>版本问题？</p>
+<p>解决:</p>
+<p>启动Playgroud后，在Profile的设定里就能找到ReadOnly的profile</p>
+<p>问题2:</p>
+<p>新建用户以后在Profile的下拉框里没有ReadOnlyClone的选项。</p>
+<p>原因:</p>
+<p>ReadOnlyClone的profile属于salesforce的License，但是在company information里发现salesforce的剩余license已经是0</p>
+<p>解决:</p>
+<p>找到一个使用salesforce的license的用户，把他的license暂时设置成其他license，等做完挑战任务再重设回来。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -242,7 +347,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-03-12 17:19:15" itemprop="dateModified" datetime="2021-03-12T17:19:15+09:00">2021-03-12</time>
+        <time title="Modified: 2021-03-14 17:55:02" itemprop="dateModified" datetime="2021-03-14T17:55:02+09:00">2021-03-14</time>
       </span>
 
   
@@ -260,7 +365,7 @@
 <p>意思是说，要想知道人生的真谛，那就必须看西游记！</p>
 <p>有人说，当你有一天真正读懂了《西游记》，你也就懂得了世间所有苦难的真谛，也就懂得了整个人生的真谛！</p>
 <p>个人认为，《西游记》可排在四大名著之首！而且它还是世间最伟大的一部成功学！看似是打妖怪的故事，其实是告诉人们如何战胜心魔的成功学。</p>
-<p>吴承恩通过西天取经的神话故事，**引领我们在人生路上不断地去克服内心、战胜心魔，最终取得真经、成就人生。</p>
+<p>吴承恩通过西天取经的神话故事，<strong>引领我们在人生路上不断地去克服内心、战胜心魔，最终取得真经、成就人生。</strong></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/03/07/my-first-blog/#more" rel="contents">
@@ -317,10 +422,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-03-07 14:35:19 / Modified: 16:07:33" itemprop="dateCreated datePublished" datetime="2021-03-07T14:35:19+09:00">2021-03-07</time>
+      <time title="Created: 2021-03-07 14:35:19" itemprop="dateCreated datePublished" datetime="2021-03-07T14:35:19+09:00">2021-03-07</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-14 15:57:30" itemprop="dateModified" datetime="2021-03-14T15:57:30+09:00">2021-03-14</time>
+      </span>
 
   
 </div>
@@ -332,19 +443,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <p>本博客致力于整理在Salesforce学习和考证过程中发现的问题和解决方法，并且收集Salesforce在各个行业的应用方式和解决方案。</p>
 
       
     </div>
