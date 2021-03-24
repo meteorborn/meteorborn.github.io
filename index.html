@@ -168,18 +168,18 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -217,6 +217,156 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/24/PrimitiveDataType/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/24/PrimitiveDataType/" class="post-title-link" itemprop="url">post</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-03-24 17:48:46 / Modified: 18:08:33" itemprop="dateCreated datePublished" datetime="2021-03-24T17:48:46+09:00">2021-03-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/APEX/" itemprop="url" rel="index"><span itemprop="name">APEX</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/APEX/%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="url" rel="index"><span itemprop="name">原始数据类型</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="原始数据类型的注意点"><a href="#原始数据类型的注意点" class="headerlink" title="原始数据类型的注意点"></a>原始数据类型的注意点</h3><p>1.所有的Apex变量，不管它们是类成员变量还是方法变量，都被初始化为null。在使用这些变量之前，先将它们设置为适当的值。</p>
+<p>尤其是boolean型，不初始化的话，值是null.</p>
+<p>或者数值型不初始化直接运算会出NullPointerException</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i;</span><br><span class="line">i +&#x3D; 1;</span><br></pre></td></tr></table></figure>
+
+<p>另外，数值型不初始化直接和文字列结合的时候，会被自动转化为’null‘文字列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i;</span><br><span class="line">System.debug(i+&#39;1&#39;);</span><br></pre></td></tr></table></figure>
+
+<p>2.Apex使用与SOAP API相同的原始数据类型，所有原始数据类型都按值传递。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/19/apex/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/19/apex/" class="post-title-link" itemprop="url">APEX学习资源汇总</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-03-19 10:02:45 / Modified: 10:07:32" itemprop="dateCreated datePublished" datetime="2021-03-19T10:02:45+09:00">2021-03-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/15/page1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -242,7 +392,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-03-15 17:56:45 / Modified: 17:58:29" itemprop="dateCreated datePublished" datetime="2021-03-15T17:56:45+09:00">2021-03-15</time>
+      <time title="Created: 2021-03-15 17:56:45 / Modified: 18:01:14" itemprop="dateCreated datePublished" datetime="2021-03-15T17:56:45+09:00">2021-03-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -275,13 +425,14 @@
           <p>To pass this challenge, block all users’ access to the Salesforce for iOS app or the Salesforce for Android app.</p>
 <p>问题1:</p>
 <p>在设定的Connected Apps OAuth Usage页面，把Salesforce for iOS的block按钮按下后，执行挑战的判定，结果失败。</p>
-<p>原因:</p>
-<p>Playgroud的语言设定问题</p>
-<p>解决:</p>
-<p>在自己的头像里面的设定选项里，把语言和时区设定里面的语言改成English，再执行挑战的判定，成功。</p>
-<p>不光这个挑战，Trailhead里面还有很多其他挑战，都会因为语言设定不是英语而不能正常判定。</p>
-<p>后继随时往这个blog里追加。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/15/page1/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -330,10 +481,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-03-14 16:28:47 / Modified: 18:20:51" itemprop="dateCreated datePublished" datetime="2021-03-14T16:28:47+09:00">2021-03-14</time>
+      <time title="Created: 2021-03-14 16:28:47" itemprop="dateCreated datePublished" datetime="2021-03-14T16:28:47+09:00">2021-03-14</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-15 18:01:06" itemprop="dateModified" datetime="2021-03-15T18:01:06+09:00">2021-03-15</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -370,17 +527,14 @@
 <p>Create a user named <strong>Lynda Herman</strong> and assign the Read Only Clone profile to her    </p>
 <p>问题1:</p>
 <p>Developer Edition里没有找到到ReadOnly的profile，有一个MinimumAccess-Salesforce的Profile，不知道是不是一样的？</p>
-<p>原因:</p>
-<p>版本问题？</p>
-<p>解决:</p>
-<p>启动Playgroud后，在Profile的设定里就能找到ReadOnly的profile</p>
-<p>问题2:</p>
-<p>新建用户以后在Profile的下拉框里没有ReadOnlyClone的选项。</p>
-<p>原因:</p>
-<p>ReadOnlyClone的profile属于salesforce的License，但是在company information里发现salesforce的剩余license已经是0</p>
-<p>解决:</p>
-<p>找到一个使用salesforce的license的用户，把他的license暂时设置成其他license，等做完挑战任务再重设回来。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/14/page/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
