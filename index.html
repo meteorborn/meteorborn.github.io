@@ -168,14 +168,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -208,6 +208,92 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/25/post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/25/post/" class="post-title-link" itemprop="url">post</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-25 16:34:20 / Modified: 16:50:06" itemprop="dateCreated datePublished" datetime="2021-04-25T16:34:20+09:00">2021-04-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/SOAP-API/" itemprop="url" rel="index"><span itemprop="name">SOAP API</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>SOAP API访问Salesforce时’LOGIN_MUST_USE_SECURITY_TOKEN’错误</p>
+<p>问题:</p>
+<p>Java程序里通过SOAP API访问Salesforce的对象时，设定好Salesforce登录的用户名和密码后，出现下面的问题exceptionCode=’LOGIN_MUST_USE_SECURITY_TOKEN’</p>
+<p>原因:</p>
+<p>通过API访问salesforce的时候，被salesforce的认证机制拦截</p>
+<p>解决:</p>
+<p>1.在密码后面追加security token.</p>
+<p>If a user’s password is mypassword, and the security token is XXXXXXXXXX, the user must enter mypasswordXXXXXXXXXX to log in.</p>
+<p>2.在网络访问页面追加服务器IP</p>
+<p>you must <strong>whitelist your server IP address</strong> in your Salesforce’s Network Access page. </p>
+<p>To get to the Network Access page, simply head over to your Salesforce dashboard and go to <strong>Setup-&gt;Administration Setup-&gt;Security Controls-&gt;Network Access.</strong></p>
+<p>参照</p>
+<p><a target="_blank" rel="noopener" href="https://poanchen.github.io/blog/2018/08/27/how-to-fix-login-must-use-security-token-in-Salesforce">https://poanchen.github.io/blog/2018/08/27/how-to-fix-login-must-use-security-token-in-Salesforce</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -535,7 +621,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/15/page1/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/15/SecurityToken/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -548,7 +634,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/15/page1/" class="post-title-link" itemprop="url">End your current Salesforce app session</a>
+          <a href="/2021/03/15/SecurityToken/" class="post-title-link" itemprop="url">End your current Salesforce app session</a>
         </h2>
 
         <div class="post-meta-container">
@@ -558,10 +644,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-03-15 17:56:45 / Modified: 18:01:14" itemprop="dateCreated datePublished" datetime="2021-03-15T17:56:45+09:00">2021-03-15</time>
+      <time title="Created: 2021-03-15 17:56:45" itemprop="dateCreated datePublished" datetime="2021-03-15T17:56:45+09:00">2021-03-15</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-25 16:50:26" itemprop="dateModified" datetime="2021-04-25T16:50:26+09:00">2021-04-25</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -595,7 +687,7 @@
 <p>在设定的Connected Apps OAuth Usage页面，把Salesforce for iOS的block按钮按下后，执行挑战的判定，结果失败。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/03/15/page1/#more" rel="contents">
+              <a class="btn" href="/2021/03/15/SecurityToken/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
